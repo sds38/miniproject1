@@ -1,7 +1,7 @@
 <?php
 /**
  Shail Shah
- Mini Project
+ Date: 6/28/2019
  * Parents: wyd 4 masterz
  * Me: My best ¯\_(ツ)_/¯
 
@@ -24,6 +24,54 @@ class main
 
     }
 }
+//need to include html for table in foreach loop
+class html {
+    public static function generateTable($records) {
+        $count = 0;
+        $table = "";
+        foreach ($records as $record) {
+            $table .= "<html>
+       
+            
+            <tbody>
+            
+            <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css\" integrity=\"sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm\" crossorigin=\"anonymous\">
+                <div class=\"container\">
+                <link href=\"tablestyle.css\" rel=\"stylesheet\" type=\"text/css\"/>
+                
+                    <table class='table table-striped table-bordered'>";
+           if ($count == 0) {
+                $array = $record->returnArray();
+                $fields = array_keys($array);
+                $table .= "<tr>";
+                //echo "<tr>;
+                foreach ($fields as $field) {
+                    $table .= "<th>" . $field . "</th>";
+                    $count++;
+                }
+                $table .= "</tr>";
+            }
+            $array = $record->returnArray();
+            $values = array_values($array);
+            $table .= "<tr>";
+            foreach ($values as $value) {
+                $table .= "<td>" . $value . "</td>";
+            }
+            $table .= "</tr>";
+        }
+        $table .= "</table>
+        
+<link href=\"style.css\" rel=\"stylesheet\" type=\"text/css\"/>
+        </div>
+            <link href=\"style.css\" rel=\"stylesheet\" type=\"text/css\"/>
+            
+        </tbody></html>";
+        return $table;
+    }
+}
+    }
+
+}
 class csv {
     static public function getRecords($filename) {
         $file = fopen($filename,"r");
@@ -41,12 +89,6 @@ class csv {
         }
         fclose($file);
         return $records;
-    }
-}
-class dataFactory {
-    public static function create(Array $fieldNames = null, Array $values = null) {
-        $record = new record($fieldNames, $values);
-        return $record;
     }
 }
 
@@ -68,27 +110,19 @@ class record {
     }
 }
 
-//need to include html for table in foreach loop
-class html {
-    public static function generateTable($records) {
-        $count = 0;
-        foreach ($records as $record) {
-            if($count == 0) {
-                $array = $record->returnArray();
-                $fields = array_keys($array);
-                $values = array_values($array);
-                print_r($fields);
-                print_r($values);
-            } else {
-                $array = $record->returnArray();
-                $values = array_values($array);
-                print_r($values);
-            }
-            $count++;
-        }
+class dataFactory {
+    public static function create(Array $fieldNames = null, Array $values = null) {
+        $record = new record($fieldNames, $values);
+        return $record;
     }
 }
 
+class system {
+
+    public static function printTable($page) {
+        echo $page;
+    }
+}
 
 ?>
 
