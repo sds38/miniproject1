@@ -9,7 +9,7 @@
 
 
 
-main::start("FL_insurance_sample.csv");
+main::start("example.csv");
 
 class main
 {
@@ -26,10 +26,24 @@ class main
 class csv
 {
 
-    static public function getRecords()
+    static public function getRecords($filename)
     {
 
-        $records[] =
+
+        $filename = 'example.csv';
+// The nested array to hold all the arrays
+        $records = [];
+
+// Open + close file
+        if (($h = fopen("{$filename}", "r")) !== FALSE)
+        {
+            // set arrays, assign to data variable
+            while (($data = fgetcsv($h, 1000, ",")) !== FALSE)
+            {
+                $records[] = $data;
+            }
+            fclose($h);
+        }
 
         }
 }
