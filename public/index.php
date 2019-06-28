@@ -14,39 +14,39 @@ main::start("example.csv");
 class main
 {
 
-    static public function start($filename) {
-
-
-        $records = csv::getRecords();
-        $table = html::generateTable($records);
-        system::printPage($table);
-
-    }
-
-class csv
-{
-
-    static public function getRecords($filename)
+    static public function start($filename)
     {
 
 
-        $filename = 'example.csv';
-// The nested array to hold all the arrays
+        $records = csv::getRecords($filename);
+        $table = html::generateTable($records);
+        system::printPage($table);
+    }
+}
+class csv
+        static public function getRecords($filename)
+    {
+
+          // The nested array to hold all the arrays
         $records = [];
 
-// Open + close file
+        // Open + close file
         if (($h = fopen("{$filename}", "r")) !== FALSE)
         {
             // set arrays, assign to data variable
             while (($data = fgetcsv($h, 1000, ",")) !== FALSE)
             {
-                $records[] = $data;
-            }
+                 $records[] = $data;
+                }
             fclose($h);
-        }
+                 }
 
-        }
-}
+            }
+        print($records);
+
+
+
+
 class html
 {
     static public function generateTable($records) {
@@ -62,12 +62,12 @@ class html
             $table .= '</tr>';
         }
         $table .= '</tbody></table>';
-        echo $table;
+        return $table;
 
     }
-    echo 'swag';
-        }
-class system{
-    static public function printPage($page) {}
-    print 'hello world';
-    }
+
+}
+
+
+?>
+
