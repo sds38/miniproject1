@@ -20,7 +20,7 @@ class main
         $records = csv::getRecords();
         $table = html::generateTable($records);
         system::printPage($table);
-    )
+
     }
 
 class csv
@@ -50,7 +50,19 @@ class csv
 class html
 {
     static public function generateTable($records) {
-
+        //header is repeated as 1st row**need to loop and set first row as code
+        $table = '<table><thead><th>First</th><th>Last</th><th>UCID</th><th>Grade</th><th>Term</th></thead><tbody>';
+        foreach($records as $row)
+        {
+            $table .= '<tr>';
+            foreach($row as $item)
+            {
+                $table .= "<td>{$item}</td>";
+            }
+            $table .= '</tr>';
+        }
+        $table .= '</tbody></table>';
+        echo $table;
 
     }
     echo 'swag';
