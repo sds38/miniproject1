@@ -32,4 +32,8 @@ foreach($records as $row)
 }
 $table .= '</tbody></table>';
 echo $table;
+
+
+
+
 ?>

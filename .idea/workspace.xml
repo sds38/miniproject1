@@ -4,7 +4,6 @@
     <list default="true" id="46076e1e-62f3-4b45-bb50-4e6d82a585f9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index2.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/public/test.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/test.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,16 +18,27 @@
       <executable />
     </execution>
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="878">
-              <caret line="66" column="8" selection-start-line="66" selection-start-column="8" selection-end-line="66" selection-end-column="8" />
-              <folding>
-                <element signature="e#6#26#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="270">
+              <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -37,7 +47,7 @@
         <entry file="file://$PROJECT_DIR$/public/example.csv">
           <provider selected="true" editor-type-id="csv-text-editor">
             <state relative-caret-position="75">
-              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
           <provider editor-type-id="csv-table-editor">
@@ -48,8 +58,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/test.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-45">
-              <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+            <state relative-caret-position="195">
+              <caret line="13" column="27" lean-forward="true" selection-end-line="38" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/index1.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
             </state>
           </provider>
         </entry>
@@ -67,8 +86,9 @@
         <option value="$PROJECT_DIR$/public/test2.php" />
         <option value="$PROJECT_DIR$/public/example.csv" />
         <option value="$PROJECT_DIR$/public/index2.php" />
-        <option value="$PROJECT_DIR$/public/test.php" />
         <option value="$PROJECT_DIR$/public/tesst.php" />
+        <option value="$PROJECT_DIR$/public/test.php" />
+        <option value="$PROJECT_DIR$/public/index1.php" />
         <option value="$PROJECT_DIR$/public/index.php" />
       </list>
     </option>
@@ -77,11 +97,11 @@
     <servers />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.2" />
-  <component name="ProjectFrameBounds">
-    <option name="x" value="500" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="498" />
     <option name="y" value="27" />
-    <option name="width" value="1400" />
-    <option name="height" value="907" />
+    <option name="width" value="796" />
+    <option name="height" value="515" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -137,7 +157,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="PHP Script.test.php">
+  <component name="RunManager" selected="PHP Script.index1.php">
     <configuration name="Unnamed" type="PhpBuiltInWebServerConfigurationType" factoryName="PHP Built-in Web Server" editBeforeRun="true" nameIsGenerated="true" document_root="$PROJECT_DIR$/public" port="8082">
       <method v="2">
         <option name="LaunchBrowser.Before.Run" url="http://localhost:8081/miniproject1/public/test.php" />
@@ -147,6 +167,9 @@
       <method v="2">
         <option name="LaunchBrowser.Before.Run" url="http://localhost:8081/miniproject1/public/test.php" />
       </method>
+    </configuration>
+    <configuration name="index1.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/public/index1.php">
+      <method v="2" />
     </configuration>
     <configuration name="index2.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/public/index2.php">
       <method v="2" />
@@ -166,9 +189,11 @@
       <item itemvalue="PHP Script.index.php" />
       <item itemvalue="PHP Script.index2.php" />
       <item itemvalue="PHP Script.tesst.php" />
+      <item itemvalue="PHP Script.index1.php" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="PHP Script.index1.php" />
         <item itemvalue="PHP Script.test.php" />
         <item itemvalue="PHP Script.index.php" />
         <item itemvalue="PHP Script.tesst.php" />
@@ -192,7 +217,8 @@
       <workItem from="1561649798583" duration="795000" />
       <workItem from="1561668975430" duration="2749000" />
       <workItem from="1561671749634" duration="4226000" />
-      <workItem from="1561741713171" duration="5548000" />
+      <workItem from="1561741713171" duration="7649000" />
+      <workItem from="1561751375152" duration="1533000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1561594996783</created>
@@ -257,7 +283,14 @@
       <option name="project" value="LOCAL" />
       <updated>1561743707512</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="test html code generation, trying to organize into classes">
+      <created>1561747311641</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1561747311641</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -269,7 +302,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23039000" />
+    <option name="totallyTimeSpent" value="26673000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -281,15 +314,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="500" y="27" width="1400" height="907" extended-state="0" />
+    <frame x="70" y="27" width="1850" height="928" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2732644" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20842572" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.4163424" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.40530303" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3994812" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -298,12 +331,12 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3294423" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="PHP-CGI Server" order="10" weight="0.3294423" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.5317769" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.5316947" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" id="Database" order="3" weight="0.3293944" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -318,7 +351,8 @@
     <MESSAGE value="finalized skeleton, set the example csv" />
     <MESSAGE value="csv array" />
     <MESSAGE value="html class" />
-    <option name="LAST_COMMIT_MESSAGE" value="html class" />
+    <MESSAGE value="test html code generation, trying to organize into classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="test html code generation, trying to organize into classes" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/public/will.php" />
@@ -333,45 +367,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/index2.php" />
+    <entry file="file://$PROJECT_DIR$/public/tesst.php" />
     <entry file="file://$PROJECT_DIR$/public/example.csv">
+      <provider editor-type-id="text-editor" />
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
       <provider selected="true" editor-type-id="csv-text-editor">
         <state relative-caret-position="75">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/index2.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="29" lean-forward="true" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/tesst.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1372">
-          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/test.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-45">
-          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+        <state relative-caret-position="195">
+          <caret line="13" column="27" lean-forward="true" selection-end-line="38" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index1.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="878">
-          <caret line="66" column="8" selection-start-line="66" selection-start-column="8" selection-end-line="66" selection-end-column="8" />
-          <folding>
-            <element signature="e#6#26#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="270">
+          <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
         </state>
       </provider>
     </entry>
