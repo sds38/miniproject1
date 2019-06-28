@@ -43,17 +43,29 @@ class csv {
         return $records;
     }
 }
-
-class dataFactory{
-        static public function create(Array $fieldNames = null, Array $values = null) {
+class dataFactory {
+    public static function create(Array $fieldNames = null, Array $values = null) {
         $record = new record($fieldNames, $values);
         return $record;
+    }
 }
+
 //need to create the property, and return the array
-class data{
-       public function _construct()
-            {$record = array_combine($fieldNames,$values)}
+class record {
+    public function __construct(Array $fieldNames = null, $values = null )
+    {
+        $record = array_combine($fieldNames, $values);
+        foreach ($record as $property => $value) {
+            $this->createProperty($property, $value);
         }
+    }
+    public function returnArray() {
+        $array = (array) $this;
+        return $array;
+    }
+    public function createProperty($name = 'first', $value = 'Shail') {
+        $this->{$name} = $value;
+    }
 }
 
 //need to include html for table in foreach loop
